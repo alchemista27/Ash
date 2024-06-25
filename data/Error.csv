@@ -1,0 +1,7 @@
+Error Condition,Error Message,Error Type,Solution,Traces
+post-installation steps were not executed,"ORA-29548: Java system class reported: release of Java system classes in the
+database (12.2.0.1.220118 1.8) does not match that of the oracle executable
+(19.0.0.0.230418 1.8)",ORA-29548,Execute CJS,"
+Doc ID 2175568.1"
+Permissions issue,"ORA-29532 ORA-29532: Java call terminated by uncaught Java exception:
+java.lang.SecurityException",ORA-29532,Grant permissions mentioned in the traces,Enable Traces ALTER SESSION SET EVENTS '29532 trace name errorstack level 3';
